@@ -37,3 +37,17 @@ docker build -t python-crud-app .
 docker run -d -p 5000:5000 python-crud-app
 
 # python-crud
+sudo apt update
+sudo apt install python3 -y
+sudo apt install python3-pip -y
+pip3 --version
+sudo apt install python3-venv -y
+python3 -m venv venv
+source venv/bin/activate
+# terminal show
+(venv) ubuntu@server:~/myapp$
+
+pip install -r requirements.txt
+python3 manage.py runserver 0.0.0.0:8000
+nohup python3 app.py &
+
