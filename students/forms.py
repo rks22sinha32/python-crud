@@ -4,4 +4,4 @@ from .models import Student
 class StudentForm(forms.ModelForm):
     class Meta:
         model = Student
-        fields = ['name', 'email', 'mobile', 'address1']
+        fields = ['name', 'email', 'mobile', 'address']
